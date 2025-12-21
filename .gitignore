@@ -1,2 +1,48 @@
-# Rust
-/target
+# Rust Build-Artefakte
+/target/
+Cargo.lock
+
+# Debug-Symbole
+*.pdb
+
+# Backup-Dateien
+*~
+*.swp
+*.swo
+
+# IDE-spezifisch
+.vscode/
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Test-Dateien (werden ignoriert)
+*.json
+*.yaml
+*.yml
+*.toml
+*.csv
+
+# Aber diese Dateien sind wichtig und werden NICHT ignoriert:
+!Cargo.toml
+!package.json
+!tsconfig.json
+
+# Ausnahmen für wichtige Config-Dateien
+!Cargo.toml
+!package.json
+
+# VitePress Build
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+node_modules/
+
+# Temporäre Dateien
+*.tmp
+*.log
