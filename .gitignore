@@ -29,14 +29,11 @@ desktop.ini
 *.toml
 *.csv
 
-# Aber diese Dateien sind wichtig und werden NICHT ignoriert:
+# Diese wichtigen Config-Dateien sind Ausnahmen und werden NICHT ignoriert:
 !Cargo.toml
 !package.json
+!package-lock.json
 !tsconfig.json
-
-# Ausnahmen für wichtige Config-Dateien
-!Cargo.toml
-!package.json
 
 # VitePress Build
 docs/.vitepress/dist/
